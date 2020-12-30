@@ -43,7 +43,7 @@
   "model": "base.footertext",
   "pk": 1,
   "fields": {
-    "body": "<p>Copyright <b>The Wagtail Bakery</b>, 2019. All rights reserved.<br/><i>\"If you read a lot you're well read / If you eat a lot you're well bread.\"</i></p>"
+    "body": "<p>Copyright <b>Praise the Lord</b>, 2019. All rights reserved.<br/><i>\"There is one who is free in giving, and yet he grows richer. / And there is one who keeps what he should give, but he ends up needing more.\"</i></p>"
   }
 },
 {
