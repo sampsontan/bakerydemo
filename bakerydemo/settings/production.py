@@ -7,16 +7,6 @@ import django_cache_url
 
 from .base import *  # noqa: F403
 
-#AWS START
-AWS_STORAGE_BUCKET_NAME = 'nicholaswinton2'
-AWS_ACCESS_KEY_ID = 'AKIAJKVLJUOJNQZSXGMQ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-
-MEDIA_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#AWS END
-
 DEBUG = os.getenv('DJANGO_DEBUG', 'off') == 'on'
 
 # DJANGO_SECRET_KEY *should* be specified in the environment. If it's not, generate an ephemeral key.
