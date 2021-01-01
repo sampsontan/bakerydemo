@@ -40,6 +40,18 @@
     <link href="{% static 'css/font-lora.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/font-open-sans.css' %}" rel="stylesheet" type="text/css">
 
+    
+    {% block extra_css %}
+        {# Override this in templates to add extra stylesheets #}
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+                $( function() {
+                    $( "#id_u5165u6578u65e5u671f" ).datepicker();
+                } );
+            </script>
+    {% endblock %}
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
